@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">HealthCare Plus</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>
+                Providing trusted medical care with experienced doctors,
+                advanced technology and compassionate service.
+            </p>
+            <a href="#appointment" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Hospital -->
+    <section class="about" id="about">
+        <h2>About Our Hospital</h2>
+
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800"
+                 alt="Modern hospital building">
+
+            <div>
+                <h3>Welcome to HealthCare Plus Hospital</h3>
+                <p>
+                    HealthCare Plus is dedicated to providing quality
+                    healthcare services to everyone. Our hospital combines
+                    experienced medical professionals, modern facilities
+                    and patient-focused care.
+                </p>
+                <p>
+                    We aim to make healthcare accessible, comfortable
+                    and reliable for every patient.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="departments" id="departments">
+        <h2>Our Medical Departments</h2>
+        <p class="description">
+            Expert care across different medical specialities.
+        </p>
+
+        <div class="department-container">
+
+            <div class="department-card">
+                <span>❤️</span>
+                <h3>Cardiology</h3>
+                <p>Diagnosis and treatment of heart conditions.</p>
+            </div>
+
+            <div class="department-card">
+                <span>🧠</span>
+                <h3>Neurology</h3>
+                <p>Specialised care for brain and nervous system.</p>
+            </div>
+
+            <div class="department-card">
+                <span>🦴</span>
+                <h3>Orthopaedics</h3>
+                <p>Treatment of bones, joints and muscles.</p>
+            </div>
+
+            <div class="department-card">
+                <span>👶</span>
+                <h3>Paediatrics</h3>
+                <p>Healthcare services for infants and children.</p>
+            </div>
+
+            <div class="department-card">
+                <span>🩺</span>
+                <h3>General Medicine</h3>
+                <p>Medical consultation and general treatment.</p>
+            </div>
+
+            <div class="department-card">
+                <span>🦷</span>
+                <h3>Dental Care</h3>
+                <p>Complete dental health and oral care.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section class="doctors" id="doctors">
+        <h2>Meet Our Doctors</h2>
+        <p class="description">
+            Experienced professionals dedicated to your health.
+        </p>
+
+        <div class="doctor-container">
+
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600"
+                     alt="Cardiologist doctor">
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Cardiologist</p>
+                <span>10+ Years Experience</span>
+            </div>
+
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600"
+                     alt="Neurologist doctor">
+                <h3>Dr. Priya Reddy</h3>
+                <p>Neurologist</p>
+                <span>8+ Years Experience</span>
+            </div>
+
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600"
+                     alt="Orthopaedic doctor">
+                <h3>Dr. Arjun Kumar</h3>
+                <p>Orthopaedic Specialist</p>
+                <span>12+ Years Experience</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Medical Services -->
+    <section class="services" id="services">
+        <h2>Our Medical Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🚑 Emergency Care</h3>
+                <p>Emergency medical assistance and urgent care.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🧪 Laboratory Tests</h3>
+                <p>Diagnostic tests and laboratory services.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>💊 Pharmacy</h3>
+                <p>Access to prescribed medicines and pharmacy support.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🏥 Inpatient Care</h3>
+                <p>Comfortable rooms and professional nursing care.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>📷 Medical Imaging</h3>
+                <p>X-ray, ultrasound and diagnostic imaging services.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>👨‍⚕️ Health Checkups</h3>
+                <p>Regular health assessments and preventive care.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Appointment Booking -->
+    <section class="appointment" id="appointment">
+        <h2>Book an Appointment</h2>
+        <p>Schedule a consultation with our medical team.</p>
+
+        <form class="appointment-form">
+
+            <label for="name">Patient Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label for="department">Select Department</label>
+            <select id="department" required>
+                <option value="">Choose Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopaedics</option>
+                <option>Paediatrics</option>
+                <option>General Medicine</option>
+                <option>Dental Care</option>
+            </select>
+
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" required>
+
+            <label for="message">Additional Information</label>
+            <textarea id="message"
+                      placeholder="Enter your message"></textarea>
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+    </section>
+
+    <!-- Health Information -->
+    <section class="health-info" id="health">
+        <h2>Health Information & Tips</h2>
+
+        <div class="health-container">
+
+            <div class="health-card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600"
+                     alt="Healthy food">
+                <h3>Healthy Eating</h3>
+                <p>
+                    Eat a balanced diet with fruits, vegetables
+                    and nutritious foods.
+                </p>
+            </div>
+
+            <div class="health-card">
+                <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600"
+                     alt="Physical exercise">
+                <h3>Regular Exercise</h3>
+                <p>
+                    Regular physical activity supports overall
+                    health and wellbeing.
+                </p>
+            </div>
+
+            <div class="health-card">
+                <img src="https://images.unsplash.com/photo-1511295742362-92c96b2d4e1d?w=600"
+                     alt="Healthy sleep">
+                <h3>Proper Sleep</h3>
+                <p>
+                    Maintain a regular sleep schedule and
+                    get enough rest.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency">
+        <h2>Emergency Medical Assistance</h2>
+        <p>For urgent medical assistance, contact emergency services.</p>
+        <h3>Emergency Number: 112 (India)</h3>
+        <p>Hospital Reception: +91 98765 43210</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Our Hospital</h2>
+
+        <div class="contact-container">
+
+            <div>
+                <h3>📍 Address</h3>
+                <p>Hyderabad, Telangana, India</p>
+            </div>
+
+            <div>
+                <h3>📞 Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div>
+                <h3>✉ Email</h3>
+                <p>healthcareplus@example.com</p>
+            </div>
+
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Hyderabad%2C%20Telangana&output=embed"
+            width="100%"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>HealthCare Plus Hospital</h2>
+        <p>Your Health, Our Priority.</p>
+        <p>© 2026 HealthCare Plus. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
