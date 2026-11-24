@@ -1,0 +1,467 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f9fc;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #063b66;
+    padding: 18px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #5de0d0;
+}
+
+/* Hero Section */
+.hero {
+    height: 520px;
+
+    background:
+        linear-gradient(rgba(0, 40, 75, 0.6),
+                        rgba(0, 40, 75, 0.6)),
+        url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00a99d;
+    color: white;
+    padding: 14px 26px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #07877f;
+}
+
+/* Common Section Styling */
+section {
+    padding: 65px 7%;
+}
+
+section h2 {
+    text-align: center;
+    color: #063b66;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about {
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.about-content img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content h3 {
+    color: #087f8c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Departments */
+.departments {
+    background-color: #edf6fb;
+}
+
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.department-card {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: transform 0.3s;
+}
+
+.department-card:hover {
+    transform: translateY(-6px);
+}
+
+.department-card span {
+    font-size: 40px;
+}
+
+.department-card h3 {
+    color: #087f8c;
+    margin: 15px 0 10px;
+}
+
+/* Doctors */
+.doctors {
+    background-color: white;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.doctor-card {
+    background-color: #f5f9fc;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    color: #063b66;
+    margin: 15px 0 8px;
+}
+
+.doctor-card p {
+    color: #087f8c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.doctor-card span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Medical Services */
+.services {
+    background-color: #edf6fb;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 28px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.service-card h3 {
+    color: #087f8c;
+    margin-bottom: 12px;
+}
+
+/* Appointment Section */
+.appointment {
+    background-color: #e4f3f8;
+    text-align: center;
+}
+
+.appointment > p {
+    margin-bottom: 30px;
+}
+
+.appointment-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.appointment-form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    color: #063b66;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.appointment-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+    outline: none;
+    border-color: #00a99d;
+}
+
+.appointment-form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background-color: #087f8c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #063b66;
+}
+
+/* Health Information */
+.health-info {
+    background-color: white;
+}
+
+.health-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.health-card {
+    background-color: #f5f9fc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.health-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.health-card h3 {
+    color: #087f8c;
+    margin: 15px;
+}
+
+.health-card p {
+    padding: 0 15px 20px;
+    line-height: 1.6;
+}
+
+/* Emergency Section */
+.emergency {
+    background-color: #d93636;
+    color: white;
+    text-align: center;
+}
+
+.emergency h2 {
+    color: white;
+}
+
+.emergency h3 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.emergency p {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #edf6fb;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 35px 0;
+    text-align: center;
+}
+
+.contact-container div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-container h3 {
+    color: #087f8c;
+    margin-bottom: 12px;
+}
+
+.contact iframe {
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #063b66;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #5de0d0;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 100%;
+    }
+
+    .department-container,
+    .doctor-container,
+    .service-container,
+    .health-container,
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .department-container,
+    .doctor-container,
+    .service-container,
+    .health-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .appointment-form {
+        padding: 20px;
+    }
+}
